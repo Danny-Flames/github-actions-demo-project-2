@@ -129,9 +129,6 @@ Before starting this project, you should have the following:
                 - name: Install dependencies
                     run: npm i
 
-                - name: Run tests
-                    run: npm test
-
                 - name: Build project
                     run: npm run build
     ```
