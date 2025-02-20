@@ -127,7 +127,7 @@ Before starting this project, you should have the following:
                     node-version: 12
 
                 - name: Install dependencies
-                    run: npm ci
+                    run: npm i
 
                 - name: Run tests
                     run: npm test
