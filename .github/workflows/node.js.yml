@@ -31,10 +31,10 @@ jobs:
       - uses: actions/checkout@v2
 
       # Sets up the specified version of Node.js
-      - name: Use Node.js ${{ matrix.node-version }}
+      - name: Set up Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 12
 
         # Installs node modules as specified in the project's package-lock.json
         run: npm ci
