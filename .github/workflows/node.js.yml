@@ -30,11 +30,11 @@ jobs:
         with:
           node-version: 12
 
-        # Installs node modules as specified in the project's package-lock.json
+      - name: Install dependencies
         run: npm ci
 
-        # This command will only run if a build script is defined in the package.json
-        run: npm run build --if-present
-
-        # Runs tests as defined in the project's package.json
+      - name: Run tests
         run: npm test
+
+      - name: Build project
+        run: npm run build
